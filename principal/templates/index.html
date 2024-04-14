@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillhub - Home</title>
+    <!--Icon-->
+    <link rel="shortcut icon" href="../../templates/static/img/home/logo_ico.ico" type="image/x-icon">
+    <!--Fontes google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Style-->
+    <link rel="stylesheet" href="../../templates/static/css/Home/style.css">
+
+</head>
+
+<body>
+
+
+    <header class="sh-topo">
+        <div class="sh-topo-opcoes">
+
+            <article id="slide-out" class="sidenav sh-topo-options">
+
+              <div class="sh-options-header">
+                <h4 class="sh-options-title">Categorias</h4>
+                <input type="text" class="sh-filtro-input" id="searchbar" placeholder="" required
+                    onkeyup="search_animal()">
+              </div>
+
+
+              <ul class="sh-list-options">
+                <li class="sh-options-item sh-options-option">
+                    <a href="#" class="sh-options-texto">
+                        <img src="../../templates/static/img/home/profissoes/dancarino.png" alt="" class="sh-options-img">
+                        Dançarino(a)
+                    </a>
+                </li>
+                <li class="sh-options-item sh-options-option">
+                    <a href="#" class="sh-options-texto">
+                        <img src="../../templates/static/img/home/profissoes/faxineiro.png" alt="" class="sh-options-img">
+                        Faxineiro(a)
+                    </a>
+                </li>
+                <li class="sh-options-item sh-options-option">
+                    <a href="#" class="sh-options-texto">
+                        <img src="../../templates/static/img/home/profissoes/investidor.png" alt="" class="sh-options-img">
+                        Investidor(a)
+                    </a>
+                </li>
+                <li class="sh-options-item sh-options-option">
+                    <a href="#" class="sh-options-texto">
+                        <img src="../../templates/static/img/home/profissoes/musico.png" alt="" class="sh-options-img"> Musicista
+                    </a>
+                </li>
+                <li class="sh-options-item sh-options-option">
+                    <a href="#" class="sh-options-texto">
+                        <img src="../../templates/static/img/home/profissoes/pedreiro.png" alt="" class="sh-options-img">
+                        Pedreiro(a)
+                    </a>
+                </li>
+                <li class="sh-options-item sh-options-option">
+                    <a href="#" class="sh-options-texto">
+                        <img src="../../templates/static/img/home/profissoes/personal.png" alt="" class="sh-options-img"> Personal Trainer
+                    </a>
+                </li>
+                <li class="sh-options-item sh-options-option">
+                    <a href="#" class="sh-options-texto">
+                        <img src="../../templates/static/img/home/profissoes/professor.png" alt="" class="sh-options-img">
+                        Professor(a)
+                    </a>
+                </li>
+              </ul>
+
+            </article>
+
+
+
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons"><img
+                        src="../../templates/static/img/home/options.svg" alt="Opções" class="sh-top-opcoes-btn"></i></a>
+        </div>
+
+        <div class="sh-topo-logo">
+            <img src="../../templates/static/img/home/logo.svg" alt="Logo Skillhub" class="sh-logo-img">
+        </div>
+
+        <div class="sh-top-buttons">
+            <a href="../../login/templates/login.html" class="sh-top-btnLink">Entrar</a>
+            <a href="../../cadastro/templates/cadastro.html" class="sh-top-btnLink">Cadastre-se</a>
+        </div>
+    </header>
+
+    <main class="sh-conteudos">
+
+        <article class="sh-conteudos-recomendados">
+            <div class="carousel">
+                <a class="carousel-item" href="#one!">
+                    <img class="sh-carrousel-img" src="../../templates/static/img/home/imagecard.png">
+                </a>
+                <a class="carousel-item" href="#two!">
+                    <img class="sh-carrousel-img" src="../../templates/static/img/home/imagecard.png">
+                </a>
+                <a class="carousel-item" href="#three!">
+                    <img class="sh-carrousel-img" src="../../templates/static/img/home/imagecard.png">
+                </a>
+                <a class="carousel-item" href="#four!">
+                    <img class="sh-carrousel-img" src="../../templates/static/img/home/imagecard.png">
+                </a>
+                <a class="carousel-item" href="#five!">
+                    <img class="sh-carrousel-img" src="../../templates/static/img/home/imagecard.png">
+                </a>
+            </div>
+        </article>
+
+        <article class="sh-conteudos-maisProcurados">
+          <h2 class="sh-titulos">Mais procurados</h2>
+
+          <ul class="sh-maisProcurados-lista">
+
+            <li class="sh-maisProcurados-item">
+                <a href="#" class="sh-maisProcurados-link">
+                    <img src="../../templates/static/img/home/profissoes/dancarino.png" alt="Imagem de profissão mais procurada" class="sh-maisProcurados-img">
+                    <p class="sh-maisProcurados-texto">Dançarino(a)</p>
+                </a>    
+            </li>
+            <li class="sh-maisProcurados-item">
+                <a href="#" class="sh-maisProcurados-link">
+                    <img src="../../templates/static/img/home/profissoes/faxineiro.png" alt="Imagem de profissão mais procurada" class="sh-maisProcurados-img">
+                    <p class="sh-maisProcurados-texto">Faxineiro(a)</p>
+                </a>    
+            </li>
+            <li class="sh-maisProcurados-item">
+                <a href="#" class="sh-maisProcurados-link">
+                    <img src="../../templates/static/img/home/profissoes/investidor.png" alt="Imagem de profissão mais procurada" class="sh-maisProcurados-img">
+                    <p class="sh-maisProcurados-texto">Investidor(a)</p>
+                </a>    
+            </li>
+            <li class="sh-maisProcurados-item">
+                <a href="#" class="sh-maisProcurados-link">
+                    <img src="../../templates/static/img/home/profissoes/musico.png" alt="Imagem de profissão mais procurada" class="sh-maisProcurados-img">
+                    <p class="sh-maisProcurados-texto">Musicista</p>
+                </a>    
+            </li>
+            <li class="sh-maisProcurados-item">
+                <a href="#" class="sh-maisProcurados-link">
+                    <img src="../../templates/static/img/home/profissoes/pedreiro.png" alt="Imagem de profissão mais procurada" class="sh-maisProcurados-img">
+                    <p class="sh-maisProcurados-texto">Pedreiro</p>
+                </a>    
+            </li>
+            <li class="sh-maisProcurados-item">
+                <a href="#" class="sh-maisProcurados-link">
+                    <img src="../../templates/static/img/home/profissoes/personal.png" alt="Imagem de profissão mais procurada" class="sh-maisProcurados-img">
+                    <p class="sh-maisProcurados-texto">Personal</p>
+                </a>    
+            </li>
+            <li class="sh-maisProcurados-item">
+                <a href="#" class="sh-maisProcurados-link">
+                    <img src="../../templates/static/img/home/profissoes/professor.png" alt="Imagem de profissão mais procurada" class="sh-maisProcurados-img">
+                    <p class="sh-maisProcurados-texto">Professor(a)</p>
+                </a>    
+            </li>
+
+          </ul>
+
+        </article>
+
+        <article class="sh-conteudos-profPopulares">
+
+            <h2 class="sh-titulos">Profissionais populares</h2>
+
+            <ul class="sh-profissionais-lista">
+                <li class="sh-profissionais-item">
+                    <a href="#" class="sh-profissionais-link">
+                      <p class="sh-profissionais-profissao">Musicista</p>
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.K_r2gReHglknOZiztTAzCAHaHa&pid=Api&P=0&h=180" alt="Imagem de profissão mais procurada" class="sh-profissionais-img">
+
+                        <ul class="sh-profissionais-estrelas-list">
+                            <li class="sh-estrelas-item"><img src="../../templates/static/img/home/estrela.png" alt="estrela" class="sh-profissionais-estrela"></li>
+                            <li class="sh-estrelas-item"><img src="../../templates/static/img/home/estrela.png" alt="estrela" class="sh-profissionais-estrela"></li>
+                            <li class="sh-estrelas-item"><img src="../../templates/static/img/home/estrela.png" alt="estrela" class="sh-profissionais-estrela"></li>
+                            <li class="sh-estrelas-item"><img src="../../templates/static/img/home/estrela.png" alt="estrela" class="sh-profissionais-estrela"></li>
+                            <li class="sh-estrelas-item"><img src="../../templates/static/img/home/estrela.png" alt="estrela" class="sh-profissionais-estrela"></li>
+                        </ul>
+
+                        <p class="sh-profissionais-texto">Estéfany Souza</p>
+                    </a>    
+                </li>
+
+                <li class="sh-profissionais-item">
+                    <a href="#" class="sh-profissionais-link">
+                      <p class="sh-profissionais-profissao">Musicista</p>
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.K_r2gReHglknOZiztTAzCAHaHa&pid=Api&P=0&h=180" alt="Imagem de profissão mais procurada" class="sh-profissionais-img">
+
+                        <ul class="sh-profissionais-estrelas-list">
+                            <li class="sh-estrelas-item"><img src="../../templates/static/img/home/estrela.png" alt="estrela" class="sh-profissionais-estrela"></li>
+                            <li class="sh-estrelas-item"><img src="../../templates/static/img/home/estrela.png" alt="estrela" class="sh-profissionais-estrela"></li>
+                            <li class="sh-estrelas-item"><img src="../../templates/static/img/home/estrela.png" alt="estrela" class="sh-profissionais-estrela"></li>
+                            <li class="sh-estrelas-item"><img src="../../templates/static/img/home/estrela.png" alt="estrela" class="sh-profissionais-estrela"></li>
+                        </ul>
+
+                        <p class="sh-profissionais-texto">Estéfany Souza</p>
+                    </a>    
+                </li>
+
+                <li class="sh-profissionais-item">
+                    <a href="#" class="sh-profissionais-link">
+                      <p class="sh-profissionais-profissao">Musicista</p>
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.K_r2gReHglknOZiztTAzCAHaHa&pid=Api&P=0&h=180" alt="Imagem de profissão mais procurada" class="sh-profissionais-img">
+
+                        <ul class="sh-profissionais-estrelas-list">
+                            <li class="sh-estrelas-item"><img src="../../templates/static/img/home/estrela.png" alt="estrela" class="sh-profissionais-estrela"></li>
+                            <li class="sh-estrelas-item"><img src="../../templates/static/img/home/estrela.png" alt="estrela" class="sh-profissionais-estrela"></li>
+                            <li class="sh-estrelas-item"><img src="../../templates/static/img/home/estrela.png" alt="estrela" class="sh-profissionais-estrela"></li>
+                            
+                        </ul>
+
+                        <p class="sh-profissionais-texto">Estéfany Souza</p>
+                    </a>    
+                </li>
+
+                <li class="sh-profissionais-item">
+                    <a href="#" class="sh-profissionais-link">
+                      <p class="sh-profissionais-profissao">Musicista</p>
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.K_r2gReHglknOZiztTAzCAHaHa&pid=Api&P=0&h=180" alt="Imagem de profissão mais procurada" class="sh-profissionais-img">
+
+                        <ul class="sh-profissionais-estrelas-list">
+                            <li class="sh-estrelas-item"><img src="../../templates/static/img/home/estrela.png" alt="estrela" class="sh-profissionais-estrela"></li>
+                            <li class="sh-estrelas-item"><img src="../../templates/static/img/home/estrela.png" alt="estrela" class="sh-profissionais-estrela"></li>
+                        </ul>
+
+                        <p class="sh-profissionais-texto">Estéfany Souza</p>
+                    </a>    
+                </li>
+
+                <li class="sh-profissionais-item">
+                    <a href="#" class="sh-profissionais-link">
+                      <p class="sh-profissionais-profissao">Musicista</p>
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.K_r2gReHglknOZiztTAzCAHaHa&pid=Api&P=0&h=180" alt="Imagem de profissão mais procurada" class="sh-profissionais-img">
+
+                        <ul class="sh-profissionais-estrelas-list">
+                            <li class="sh-estrelas-item"><img src="../../templates/static/img/home/estrela.png" alt="estrela" class="sh-profissionais-estrela"></li>
+                        </ul>
+
+                        <p class="sh-profissionais-texto">Estéfany Souza</p>
+                    </a>    
+                </li>
+
+                <li class="sh-profissionais-item">
+                    <a href="#" class="sh-profissionais-link">
+                      <p class="sh-profissionais-profissao">Musicista</p>
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.K_r2gReHglknOZiztTAzCAHaHa&pid=Api&P=0&h=180" alt="Imagem de profissão mais procurada" class="sh-profissionais-img">
+
+                        <ul class="sh-profissionais-estrelas-list">
+                            
+                        </ul>
+
+                        <p class="sh-profissionais-texto">Estéfany Souza</p>
+                    </a>    
+                </li>
+            </ul>
+
+        </article>
+
+    </main>
+
+    <footer class="sh-rodape"></footer>
+
+    <!--Script Página-->
+    <script src="../../templates/static/js/Home/script.js"></script>
+
+    <!--Materialize-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

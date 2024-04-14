@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillhub - Cadastro</title>
+    <!--Icon-->
+    <link rel="shortcut icon" href="../../templates/static/img/login/logo_ico.ico" type="image/x-icon">
+    <!--Style-->
+    <link rel="stylesheet" href="../../templates/static/css/Login/style.css">
+    <!--Fontes google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <main class="sh-tela-cadastro">
+
+        <section class="sh-formulario">
+
+            <div class="sh-area-titulo">
+                <h1 class="sh-titulo">Skillhub</h1>
+            </div>
+
+            <article class="sh-dados-cadastrais">
+                <ul class="sh-area-inputs">
+
+                    <li class="sh-inputs-lista sh-lista-email">
+                        <input type="text" class="sh-dados-inputs sh-input-email" id="sh_input_email" required>
+                        <label for="sh_input_email" class="sh-inputs-labels sh-label-email">E-mail</label>
+                    </li>
+
+                    <li class="sh-inputs-lista sh-lista-senha">
+                        <input type="password" class="sh-dados-inputs sh-input-senha" id="sh_input_senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$">
+                        <label for="sh_input_senha" class="sh-inputs-labels sh-label-senha" >Senha</label>
+                    </li>
+                </ul>
+                <img src="../../templates/static/img/login/escondido.png" alt="Mostrar senha" class="sh-senha-bisibilidade-img" id="img_visibilidade">
+            </article>
+
+            <ul class="sh-footer">
+                <button type="button" class="sh-button-login" id="sh_button_login">Entrar</button>
+                <li class="sh-footer-lembrese"><input type="checkbox" name="lembrarse" id="lembrarse"><label for="lembrarse" class="sh-label-lembrese">Lembre de mim.</label></li>
+                <li class="sh-footer-cadastro"><p>Não tem conta? <a href="../../cadastro/templates/cadastro.html" class="sh-footer-link">Cadastre-se</a></p></li>
+                <li class="sh-footer-cadastro"><a href="../../principal/templates/index.html" class="sh-footer-link">Home</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="../../templates/static/js/Login/script.js"></script>
+</body>
+</html>

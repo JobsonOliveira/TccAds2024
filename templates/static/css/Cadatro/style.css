@@ -1,0 +1,354 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Cores*/
+    --sh-cor-branco: #fff;
+    --sh-cor-preto: #000;
+    --sh-cor-fundo-form: rgba(255, 255, 255, .6);
+    --sh-cor-label: #000;
+    --sh-cor-texto: #000;
+    --sh-box-shadow: 0px 0px 15px 3px #000000;
+    --sh-cor-button: #107DDB;
+    --sh-cor-button-hover: #0f70c5;
+
+    /*Fontes*/
+    --sh-fonte-principal: "Montserrat", sans-serif;
+    --sh-fonte-texto: "Roboto", sans-serif;
+    --sh-fonteSize-titulo: 1.1rem;
+    --sh-fonteSize-textos: .9rem;
+    --sh-fonteSize-menor: .7rem;
+    --sh-fontSize-dados: 1rem;
+    --sh-fonteSize-titulo-popup: 2rem;
+
+    /* ----375px---- */
+
+    --sh-fonteSize-titulo_375px: 1.3rem;
+    --sh-fonteSize-textos_375px: 1.2rem;
+    --sh-fonteSize-menor_375px: 1rem;
+    --sh-fontSize-dados_375px: 1.3rem;
+
+    /*---768px---*/
+    --sh-fonteSize-titulo_768px: 1.5rem;
+    --sh-fonteSize-textos_768px: 1.1rem;
+    --sh-fonteSize-menor_768px: .9rem;
+    --sh-fontSize-dados_768px: 1.1rem;
+}
+
+html,body {
+    height: 100%;
+}
+
+.sh-main-termos {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border: 0;
+    outline: none;
+    display: flex;
+
+    /*-----*/
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header {
+    background-color: var(--sh-cor-branco);
+}
+
+
+.sh-modal-titulo {
+    font-size: var(--sh-fonteSize-titulo);
+    font-family: var(--sh-fonte-principal);
+    color: var(--sh-cor-texto);
+    display: flex;
+    text-align: center;
+    width: 100%;
+    text-align: center !important;
+}
+
+.sh-termos-link {
+    font-family: var(--sh-fonte-principal);
+    font-size: var(--sh-fonteSize-textos);
+}
+
+
+
+main.sh-tela-cadastro {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../img/Cadastro/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0;
+    background-attachment: fixed;
+    
+}
+/*Fomulario completo*/
+.sh-formulario{
+    background-color: var(--sh-cor-fundo-form);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: max-content;
+    box-shadow: var(--sh-box-shadow);
+    border-radius: 5px;
+}
+
+/*Div do titulo*/
+.sh-area-titulo {
+    padding: 3px;
+    text-align: center;
+}
+
+/*Titulo*/
+.sh-area-titulo h1 {
+    font-family: var(--sh-fonte-principal);
+    color: var(--sh-cor-texto);
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: var(--sh-fonteSize-titulo);
+}
+
+/*Article com os inputs*/
+.sh-dados-cadastrais {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/*Area com os primeiros inputs*/
+.sh-area-inputs {
+    display: grid;
+    gap: 5px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sh-inputs-lista {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 45px;
+    justify-content: end;
+}
+
+.sh-inputs-labels {
+    position: absolute;
+    color: var(--sh-cor-texto);
+    top: 60%;
+    left: 0%;
+    width: max-content;
+    border-radius: 5px;
+    padding: 0 2px;
+    text-align: left;
+    transition: 1s;
+    font-family: var(--sh-fonte-principal);
+    font-size: var(--sh-fonteSize-textos);
+}
+
+/*Inputs*/
+.sh-dados-inputs {
+    height: 30px;
+    border-bottom: 1px solid var(--sh-cor-preto);
+    color: var(--sh-cor-texto);
+    font-family: var(--sh-fonte-texto);
+    font-size: var(--sh-fontSize-dados);
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+    font-weight: 400;
+    padding: 3px;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+}
+
+.sh-dados-inputs::placeholder {
+    color: var(--sh-cor-texto);
+}
+
+.sh-dados-inputs:focus ~ .sh-inputs-labels,
+.sh-dados-inputs:valid ~ .sh-inputs-labels{
+    color: var(--sh-cor-texto);
+    top: 0%;
+    font-size: var(--sh-fonteSize-menor);
+}
+
+/*Area com o input de senha*/
+.sh-area-senha {
+    height: max-content;
+    position: relative;
+    align-items: end;
+    display: block;
+    text-align: center;
+}
+
+.sh-senha-bisibilidade-img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.sh-senha-bisibilidade-img:hover {
+    filter: drop-shadow(0px 0px 2px #fff);
+}
+
+
+/*Area dos buttons*/
+
+.sh-footer {
+    margin-top: 20px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sh-label-termo {
+    font-family: var(--sh-fonte-principal);
+    font-size: var(--sh-fonteSize-textos);
+}
+
+.sh-label-termo a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sh-button-register {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: var(--sh-cor-button);
+    border: 1px solid var(--sh-cor-preto);
+    font-family: var(--sh-fonte-principal);
+    font-size: var(--sh-fonteSize-titulo);
+    cursor: pointer;
+    width: 100%;
+}
+
+.sh-button-register:hover {
+    background-color: var(--sh-cor-button-hover);
+}
+
+.sh-fazer-login {
+    text-decoration: none;
+    font-size: var(--sh-fonteSize-textos);
+    font-family: var(--sh-fonte-principal);
+    padding: 5px 0;
+}
+
+.sh-footer-map {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+}
+
+@media (min-width: 375px) {
+    .sh-area-titulo h1 {
+        font-size: var(--sh-fonteSize-titulo_375px);
+    }
+
+    .sh-inputs-labels {
+        font-size: var(--sh-fonteSize-textos_375px);
+        top: 45%;
+    }
+
+    .sh-dados-inputs:focus ~ .sh-inputs-labels,
+    .sh-dados-inputs:valid ~ .sh-inputs-labels {
+        font-size: var(--sh-fonteSize-menor_375px);
+    }
+
+    .sh-dados-inputs {
+        font-size: var(--sh-fontSize-dados_375px);
+    }
+
+    .sh-senha-bisibilidade-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .sh-label-termo {
+        font-size: var(--sh-fonteSize-textos_375px);
+    }
+
+    .sh-button-register {
+        font-size: var(--sh-fonteSize-titulo_375px);
+    }
+
+    .sh-fazer-login {
+        text-decoration: none;
+        font-size: var(--sh-fonteSize-textos_375px);
+        font-family: var(--sh-fonte-principal);
+    }
+}
+
+@media (min-width: 768px) {
+
+    .sh-area-titulo h1 {
+        font-size: var(--sh-fonteSize-titulo_768px);
+    }
+
+    .sh-area-inputs {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 30px;
+    }
+
+    .sh-inputs-labels {
+        font-size: var(--sh-fonteSize-textos_768px);
+    }
+
+    .sh-dados-inputs:focus ~ .sh-inputs-labels,
+    .sh-dados-inputs:valid ~ .sh-inputs-labels {
+        font-size: var(--sh-fonteSize-menor_768px);
+    }
+
+    .sh-dados-inputs {
+        width: 250px;
+        font-size: var(--sh-fontSize-dados_768px);
+    }
+
+    .sh-area-senha {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sh-senha-bisibilidade-img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .sh-footer {
+        margin-top: 60px;
+    }
+
+    .sh-footer-acordo {
+        margin-bottom: 20px;
+    }
+
+    .sh-label-termo {
+        font-size: var(--sh-fonteSize-textos_768px);
+    }
+    
+    .sh-button-register {
+        font-size: var(--sh-fonteSize-titulo_768px);
+        width: max-content;
+        padding: 10px 90px;
+    }
+    .sh-fazer-login {
+        text-decoration: none;
+        font-size: var(--sh-fonteSize-textos_768px);
+        font-family: var(--sh-fonte-principal);
+    }
+}

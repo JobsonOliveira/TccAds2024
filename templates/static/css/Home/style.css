@@ -1,0 +1,333 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Cores */
+    --sh-cor-primaria: #0080EE;
+    --sh-cor-secundaria: #107DDB;
+    --sh-cor-terciaria: #fff;
+    --sh-cor-quaternaria: #000;
+    --sh-cor-buttonAtivo: #3aa0ff;
+    --sh-cor-boxshadow: 2px 2px 3px 1px #000000c0;
+    --sh-cor-texto: #000;
+    --sh-transparencia: rgba(255, 255, 255, .4);
+    
+    /* Font size */
+    --sh-fontSize-titulos: 1.4rem;
+    --sh-fontSize-textos: 1rem;
+    --sh-fontSize-procurados: .6rem;
+
+    --sh-fonte-principal: "Montserrat", sans-serif;
+}
+
+
+body {
+    font-family: var(--sh-fonte-principal) !important;
+}
+
+/*-----------HEADER*/
+.sh-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    background-color: var(--sh-cor-primaria);
+}
+
+/*Aonde está a img de options*/
+.sh-topo-opcoes {
+    width: 78px;
+    height: max-content;
+    padding: 5px;
+}
+
+.sh-list-options {
+    display: grid;
+    gap: 10px;
+    height: 100%;
+    overflow-y: auto;
+    padding: 5px 0;
+    background-color: var(--sh-cor-terciaria);
+}
+
+.sh-list-options::-webkit-scrollbar {
+    background-color: var(--sh-cor-terciaria);
+    width: 5px;
+}
+
+.sh-list-options::-webkit-scrollbar-thumb {
+    background-color: var(--sh-cor-primaria);
+}
+
+.sh-options-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.sh-topo-options {
+    background-color: var(--sh-cor-primaria) !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 5px;
+    height: 100% !important;
+}
+
+.sh-options-item {
+    padding: 0 10px !important;
+}
+
+
+.sh-filtro-input {
+    text-align: center !important;
+    background-image: url("../../img/home/lupa.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: left;
+    height: 33px !important;
+    width: 21px !important;
+    border-color: transparent !important;
+    transition: 1s !important;
+    cursor: pointer;
+}
+
+.sh-filtro-input:focus,
+.sh-filtro-input:valid {
+    background-image: none;
+    width: 100% !important;
+    outline: none;
+    border-bottom: 1px solid var(--sh-cor-quaternaria) !important;
+}
+
+.sh-options-texto {
+    height: max-content !important;
+    display: flex !important;
+    gap: 10px;
+    justify-content: left;
+    padding: 0 !important;
+    border-radius: 5px;
+    box-shadow: var(--sh-cor-boxshadow);
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.sh-options-texto:hover {
+    box-shadow: none;
+    border-color: var(--sh-cor-quaternaria);
+    background-color: var(--sh-cor-primaria) !important;
+}
+
+.sh-options-img {
+    width: 50px;
+    height: 50px;
+}
+
+.sh-options-title {
+    font-size: var(--sh-fontSize-titulos);
+    text-align: center;
+    font-weight: 550;
+}
+
+.sh-top-opcoes-btn {
+    width: 30px;
+}
+
+.sh-top-opcoes-btn:hover {
+    filter:  drop-shadow(0px 0px 0px var(--sh-cor-quaternaria));
+}
+
+/*Aonde está a logo*/
+.sh-topo-logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sh-logo-img {
+    width: 95px;
+}
+
+/*Aonde está os buttons*/
+.sh-top-buttons {
+    display: grid;
+    padding: 1px;
+    gap: 8px;
+}
+
+.sh-top-btnLink {
+    background-color: var(--sh-cor-secundaria);
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--sh-cor-texto);
+    font-size: var(--sh-fontSize-textos);
+    padding: 2px;
+    box-shadow: var(--sh-cor-boxshadow);
+    font-weight: 550;
+    border: 1px solid transparent;
+    transition: .5s;
+}
+
+.sh-top-btnLink:hover {
+    background-color: var(--sh-cor-buttonAtivo);
+    box-shadow: none;
+    border: 1px solid var(--sh-cor-quaternaria);
+}
+
+/* -------------------Main----------------- */
+.sh-conteudos {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+}
+
+.sh-conteudos-recomendados {
+   
+}
+
+.sh-conteudos-maisProcurados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sh-titulos {
+    font-size: var(--sh-fontSize-titulos);
+    text-align: center;
+    background-color: var(--sh-cor-secundaria);
+    border-radius: 5px;
+    font-weight: 550;
+    padding: 2px;
+    width: max-content;
+}
+
+.sh-maisProcurados-lista {
+    list-style-type: none;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    gap: 5px;
+}
+
+.sh-maisProcurados-item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sh-maisProcurados-link {
+    text-decoration: none;
+    height: max-content;
+    cursor: pointer;
+}
+
+.sh-maisProcurados-img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--sh-cor-quaternaria);
+    border-radius: 5px;
+    box-shadow: var(--sh-cor-boxshadow);
+    transition: .5s;
+}
+
+.sh-maisProcurados-texto {
+    background-color: var(--sh-cor-secundaria);
+    font-size: var(--sh-fontSize-procurados);
+    color: var(--sh-cor-texto);
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 2px;
+    box-shadow: var(--sh-cor-boxshadow);
+    transition: .5s;
+}
+
+.sh-maisProcurados-img:hover,
+.sh-maisProcurados-texto:hover {
+    box-shadow: none;
+}
+
+.sh-conteudos-profPopulares {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Profissionais populares */
+
+.sh-profissionais-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    width: 100%;
+}
+
+.sh-profissionais-item {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.sh-profissionais-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: 1px solid var(--sh-cor-quaternaria);
+}
+
+.sh-profissionais-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: var(--sh-cor-boxshadow);
+    width: max-content;
+    border: 1px solid var(--sh-cor-quaternaria);
+    transition: .5s;
+}
+
+.sh-profissionais-link:hover {
+    box-shadow: none;
+}
+
+.sh-profissionais-profissao {
+    color: var(--sh-cor-texto);
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.sh-profissionais-estrelas-list {
+    display: flex;
+    padding: 5px 0;
+    gap: 2px;
+    height: 30px;
+}
+
+.sh-profissionais-estrela {
+    width: 12px;
+}
+
+.sh-profissionais-texto {
+    color: var(--sh-cor-texto);
+}
+
+.sh-rodape {
+    background-color: var(--sh-cor-primaria);
+    height: 100px;
+}
