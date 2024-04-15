@@ -18,15 +18,20 @@
     
     /* Font size */
     --sh-fontSize-titulos: 1.8rem;
-    --sh-fontSize-textos: 1.3rem;
+    --sh-fontSize-textos: 1rem;
     --sh-fontSize-procurados: .9rem;
 
     --sh-fonte-principal: "Montserrat", sans-serif;
 }
 
+html, body {
+    height: 100%;
+    width: 100%;
+}
 
 body {
     font-family: var(--sh-fonte-principal) !important;
+    width: 100%;
 }
 
 /*-----------HEADER*/
@@ -164,7 +169,7 @@ body {
 .sh-top-buttons {
     display: grid;
     padding: 1px;
-    gap: 8px;
+    gap: 12px;
 }
 
 .sh-top-btnLink {
@@ -221,7 +226,7 @@ body {
     list-style-type: none;
     padding: 0px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     gap: 5px;
 }
@@ -308,7 +313,7 @@ body {
     width: max-content;
     border: 1px solid var(--sh-cor-quaternaria);
     transition: .5s;
-    gap: 10px;
+    gap: 5px;
 }
 
 .sh-profissionais-link:hover {
@@ -340,4 +345,90 @@ body {
 .sh-rodape {
     background-color: var(--sh-cor-primaria);
     height: 100px;
+}
+
+@media (min-width: 425px) {
+
+
+    :root {
+        --sh-fontSize-textos: 1.3rem;
+        --sh-fontSize-procurados: .8rem;
+    }
+
+    .sh-top-btnLink {
+
+    }
+    .sh-maisProcurados-lista {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .sh-maisProcurados-link {
+        width: 80px;
+    }
+
+
+    .sh-profissionais-link {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 576px) {
+    .sh-top-opcoes-btn {
+        width: 45px;
+    }
+
+    .sh-logo-img {
+        width: 145px;
+    }
+
+    :root {
+        --sh-fontSize-textos: 1.5rem;
+        --sh-fontSize-titulos: 2rem;
+    }
+
+    .sh-maisProcurados-lista {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .sh-profissionais-lista {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --sh-fontSize-textos: 1.2rem;
+        --sh-fontSize-titulos: 2rem;
+    }
+
+    .sh-top-opcoes-btn {
+        width: 40px;
+    }
+
+    .sh-topo {
+        padding: 15px 20px;
+    }
+
+    .sh-maisProcurados-lista {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .sh-conteudos-profPopulares {
+        margin-top: 100px;
+    }
+
+    .sh-profissionais-lista {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .sh-profissionais-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .sh-profissionais-estrela {
+        width: 15px;
+        height: 15px;
+    }
+    
 }
