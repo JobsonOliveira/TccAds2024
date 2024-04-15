@@ -17,9 +17,9 @@
     --sh-transparencia: rgba(255, 255, 255, .4);
     
     /* Font size */
-    --sh-fontSize-titulos: 1.4rem;
-    --sh-fontSize-textos: 1rem;
-    --sh-fontSize-procurados: .6rem;
+    --sh-fontSize-titulos: 1.8rem;
+    --sh-fontSize-textos: 1.3rem;
+    --sh-fontSize-procurados: .9rem;
 
     --sh-fonte-principal: "Montserrat", sans-serif;
 }
@@ -135,7 +135,7 @@ body {
 }
 
 .sh-top-opcoes-btn {
-    width: 30px;
+    width: 35px;
 }
 
 .sh-top-opcoes-btn:hover {
@@ -171,7 +171,7 @@ body {
     text-decoration: none;
     color: var(--sh-cor-texto);
     font-size: var(--sh-fontSize-textos);
-    padding: 2px;
+    padding: 3px;
     box-shadow: var(--sh-cor-boxshadow);
     font-weight: 550;
     border: 1px solid transparent;
@@ -208,7 +208,7 @@ body {
     background-color: var(--sh-cor-secundaria);
     border-radius: 5px;
     font-weight: 550;
-    padding: 2px;
+    padding: 5px;
     width: max-content;
 }
 
@@ -232,11 +232,12 @@ body {
     text-decoration: none;
     height: max-content;
     cursor: pointer;
+    width: 90px;
 }
 
 .sh-maisProcurados-img {
-    width: 60px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     border: 1px solid var(--sh-cor-quaternaria);
     border-radius: 5px;
     box-shadow: var(--sh-cor-boxshadow);
@@ -252,6 +253,8 @@ body {
     padding: 2px;
     box-shadow: var(--sh-cor-boxshadow);
     transition: .5s;
+    text-align: center;
+    width: 100%;
 }
 
 .sh-maisProcurados-img:hover,
@@ -282,8 +285,8 @@ body {
 }
 
 .sh-profissionais-img {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     border-radius: 100px;
     border: 1px solid var(--sh-cor-quaternaria);
 }
@@ -300,6 +303,7 @@ body {
     width: max-content;
     border: 1px solid var(--sh-cor-quaternaria);
     transition: .5s;
+    gap: 10px;
 }
 
 .sh-profissionais-link:hover {
@@ -309,22 +313,23 @@ body {
 .sh-profissionais-profissao {
     color: var(--sh-cor-texto);
     font-weight: bold;
-    padding-bottom: 5px;
+    font-size: var(--sh-fontSize-textos);
 }
 
 .sh-profissionais-estrelas-list {
     display: flex;
-    padding: 5px 0;
     gap: 2px;
-    height: 30px;
+    height: 22px;
 }
 
 .sh-profissionais-estrela {
-    width: 12px;
+    width: 20px;
+    height: 20px;
 }
 
 .sh-profissionais-texto {
     color: var(--sh-cor-texto);
+    font-size: var(--sh-fontSize-textos);
 }
 
 .sh-rodape {
