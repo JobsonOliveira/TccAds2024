@@ -125,6 +125,7 @@ body {
     box-shadow: var(--sh-cor-boxshadow);
     cursor: pointer;
     border: 1px solid transparent;
+    transition: .5s;
 }
 
 .sh-options-texto:hover {
