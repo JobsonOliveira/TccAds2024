@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skillhub - Cadastro</title>
     <!--Icon-->
-    <link rel="shortcut icon" href="../../templates/static/img/Cadastro/logo_ico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{%static 'img/Cadastro/logo_ico.ico'%}" type="image/x-icon">
     <!--Style-->
-    <link rel="stylesheet" href="../../templates/static/css/Cadatro/style.css">
+    <link rel="stylesheet" href="{%static 'css/Cadatro/style.css'%}">
     <!--Fontes google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,7 +79,7 @@
                         <input type="password" class="sh-dados-inputs sh-input-senha" id="sh_input_senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$">
                         <label for="sh_input_senha" class="sh-inputs-labels sh-label-senha" >Senha</label>
                     </li>
-                    <img src="../../templates/static/img/Cadastro/escondido.png" alt="Mostrar senha" class="sh-senha-bisibilidade-img" id="img_visibilidade">
+                    <img src="{%static 'img/Cadastro/escondido.png'%}" data-olho="{% static 'img/Cadastro/olho.png' %}" data-escondido="{% static 'img/Cadastro/escondido.png' %}" alt="Mostrar senha" class="sh-senha-bisibilidade-img" id="img_visibilidade">
                 </div>
             </article>
 
@@ -95,8 +96,8 @@
                 <button type="button" class="sh-button-register" id="sh_button_register" disabled>Criar conta</button>
 
                 <p class="sh-footer-map">
-                    <a href="../../login/templates/login.html" class="sh-fazer-login">Fazer login</a>
-                    <a href="../../principal/templates/index.html" class="sh-fazer-login">Home</a>
+                    <a href="/login/" class="sh-fazer-login">Fazer login</a>
+                    <a href="/" class="sh-fazer-login">Home</a>
                 </p>
             </article>
         </section>
@@ -106,6 +107,6 @@
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <script src="../../templates/static/js/Cadastro/script.js"></script>
+    <script src="{%static 'js/Cadastro/script.js'%}"></script>
 </body>
 </html>

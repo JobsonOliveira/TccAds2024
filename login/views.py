@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+def home(request):
+    status = request.GET.get('status')
+    return render(request, 'index.html', {'status': status})
+def login(request):
+    
+    return render(request, 'login.html')

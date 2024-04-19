@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skillhub - Cadastro</title>
     <!--Icon-->
-    <link rel="shortcut icon" href="../../templates/static/img/login/logo_ico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{%static 'img/login/logo_ico.ico'%}" type="image/x-icon">
     <!--Style-->
-    <link rel="stylesheet" href="../../templates/static/css/Login/style.css">
+    <link rel="stylesheet" href="{%static 'css/Login/style.css'%}">
     <!--Fontes google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,7 @@
         <section class="sh-formulario">
 
             <div class="sh-area-logo">
-                <a href="../../principal/templates/index.html"><img src="../../templates/static/img/login/logo.svg" class="sh-logo"></a>
+                <a href="{% url 'logar' %}"><img src="{%static 'img/login/logo.svg'%}" class="sh-logo"></a>
             </div>
 
             <article class="sh-dados-cadastrais">
@@ -33,20 +34,22 @@
                         <input type="text" class="sh-dados-inputs sh-input-email" id="sh_input_email" required>
                         <label for="sh_input_email" class="sh-inputs-labels sh-label-email">E-mail</label>
                     </li>
+                    
 
                     <li class="sh-inputs-lista sh-lista-senha">
                         <input type="password" class="sh-dados-inputs sh-input-senha" id="sh_input_senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$">
                         <label for="sh_input_senha" class="sh-inputs-labels sh-label-senha" >Senha</label>
                     </li>
                 </ul>
-                <img src="../../templates/static/img/login/escondido.png" alt="Mostrar senha" class="sh-senha-bisibilidade-img" id="img_visibilidade">
+                <img src="{% static 'img/login/escondido.png' %}" data-olho="{% static 'img/Login/olho.png' %}" data-escondido="{% static 'img/Login/escondido.png' %}" alt="Mostrar senha" class="sh-senha-bisibilidade-img" id="img_visibilidade">
+
             </article>
 
             <ul class="sh-footer">
                 <li class="sh-footer-lembrese"><input type="checkbox" name="lembrarse" id="lembrarse"><label for="lembrarse" class="sh-label-lembrese">Lembre de mim.</label></li>
                 <button type="button" class="sh-button-login" id="sh_button_login">Entrar</button>
-                <li class="sh-footer-cadastro"><p>Não tem conta? <a href="../../cadastro/templates/cadastro.html" class="sh-footer-link">Cadastre-se</a></p></li>
-                <li class="sh-footer-cadastro"><a href="../../principal/templates/index.html" class="sh-footer-link">Home</a></li>
+                <li class="sh-footer-cadastro"><p>Não tem conta? <a href="/cadastro/" class="sh-footer-link">Cadastre-se</a></p></li>
+                <li class="sh-footer-cadastro"><a href="{% url 'homesemlogin' %}" class="sh-footer-link">Home</a></li>
             </ul>
         </section>
 
@@ -55,6 +58,6 @@
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <script src="../../templates/static/js/Login/script.js"></script>
+    <script src="{% static 'js/Login/script.js'%}"></script>
 </body>
 </html>

@@ -8,12 +8,12 @@ alteraVisibilidade.addEventListener('click', () => {
     if (visivel === true) {
         inputSenha.type = 'password';
         visivel = false;
-        alteraVisibilidade.src = "../../templates/static/img/Login/escondido.png";
+        alteraVisibilidade.src = alteraVisibilidade.dataset.escondido;
     }
     //Torna senha visivel
     else {
         inputSenha.type = 'text';
         visivel = true;
-        alteraVisibilidade.src = "../../templates/static/img/Login/olho.png";
+        alteraVisibilidade.src = alteraVisibilidade.dataset.olho;
     }
 });
